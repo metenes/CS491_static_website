@@ -1,14 +1,12 @@
 // script.js
-document.getElementById('learn-more').addEventListener('click', () => {
-    alert('Thanks for your interest! More details will be available soon.');
-});
-
-document.getElementById('contact-form').addEventListener('submit', (event) => {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
-
+    
     if (name && email) {
-        alert(`Thanks, ${name}! We will contact you shortly at ${email}.`);
+        alert(`Thank you, ${name}! We will contact you at ${email} soon.`);
+    } else {
+        alert('Please fill out all fields.');
     }
 });

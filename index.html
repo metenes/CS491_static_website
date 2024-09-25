@@ -1,63 +1,100 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Advanced static website">
-    <title>CS491 Fall'24 </title>
+    <meta name="description" content="Senior Year Group Project">
+    <title>CS491 Senior Year Group Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo-container">
+            <img src="images/bilkent.png" alt="School Logo" class="school-logo">
+        </div>
+        <h1 style="color: aliceblue;">Senior Year Group Project</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#release-notes">Release Notes</a></li>
+            <li><a href="#group-members">Group Members</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="home">
-            <h1>Ihsan Dogramaci Bilkent University</h1>
-            <h3>CS491 Fall'24 Senior-year Project Group Page</h3>
-            <p>Welcome !, This is a fully functional, responsive static website created for CS491 course, as all senior-year project groups required to have a offical website</p>
-            <button id="learn-more">Learn More</button>
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>Project Introduction</h2>
+            <p>
+                Welcome to our Senior Year Group Project page! This project is a culmination of our hard work throughout our academic journey. 
+                Our goal is to demonstrate our skills and contribute a significant project to the community.
+            </p>
         </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="services-container">
-                <div class="service">
-                    <h3>Web Development</h3>
-                    <p>We offer top-notch web development services.</p>
-                </div>
-                <div class="service">
-                    <h3>SEO Optimization</h3>
-                    <p>Optimize your website for search engines.</p>
-                </div>
-                <div class="service">
-                    <h3>UI/UX Design</h3>
-                    <p>Beautiful designs that your users will love.</p>
-                </div>
+        <!-- Release Notes Section -->
+        <section id="release-notes">
+            <h2>Release Notes</h2>
+            <div class="release">
+                <h3>Version 1.0 - Initial Release</h3>
+                <ul>
+                    <li>Implemented basic project structure.</li>
+                    <li>Added team member details and contact form.</li>
+                    <li>Basic GUI setup with navigation and introduction.</li>
+                </ul>
+            </div>
+            <div class="release">
+                <h3>Version 1.1 - UI Improvements</h3>
+                <ul>
+                    <li>Updated group member profiles with photos and details.</li>
+                    <li>Improved UI and added responsive design.</li>
+                    <li>Optimized performance and added accessibility features.</li>
+                </ul>
             </div>
         </section>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a team of students dedicated to build a project for CS491 .</p>
+        <!-- Group Members Section -->
+        <section id="group-members">
+            <h2>Group Members</h2>
+            <div class="members-container">
+                <div class="member">
+                    <img src="member1-photo.jpg" alt="Member 1" class="member-photo">
+                    <h3>Mete Enes Yılmaz</h3>
+                    <p>Bilkent ID: 22102849</p>
+                    <p>Bilkent Email: mete.yilmaz@ug.bilkent.edu.tr</p>
+                </div>
+                <div class="member">
+                    <img src="member2-photo.jpg" alt="Member 2" class="member-photo">
+                    <h3>Doğa Özdemir</h3>
+                    <p>Student Number: 654321</p>
+                    <p>Email: jane.smith@example.com</p>
+                </div>
+                <div class="member">
+                    <img src="member1-photo.jpg" alt="Member 1" class="member-photo">
+                    <h3>Zeynep Baş</h3>
+                    <p>Student Number: 123456</p>
+                    <p>Email: john.doe@example.com</p>
+                </div>
+                <div class="member">
+                    <img src="member1-photo.jpg" alt="Member 1" class="member-photo">
+                    <h3>Melisa İrem Akel</h3>
+                    <p>Student Number: 123456</p>
+                    <p>Email: john.doe@example.com</p>
+                </div>
+                <div class="member">
+                    <img src="member1-photo.jpg" alt="Member 1" class="member-photo">
+                    <h3>Mustafa Kağan Özsoy </h3>
+                    <p>Student Number: 123456</p>
+                    <p>Email: john.doe@example.com</p>
+                </div>
+                <!-- Add more members as needed -->
+            </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Us</h2>
             <form id="contact-form">
@@ -76,7 +113,7 @@
     </main>
 
     <footer>
-        <p>&copy; Offical 2024-2025 Static Website for CS491 Course</p>
+        <p>&copy; 2024 Senior Year Group Project. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
